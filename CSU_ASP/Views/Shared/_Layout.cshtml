@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css " rel="stylesheet" type="text/css" />
+    <link href="~/css/style.css " rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CSU_ASP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Cars/List">Машины</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Cars/List/electro">Электромобили</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Cars/List/fuel">Машины с ДВС</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ShopCart/Index">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container mt-5"></div>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/js/bootstrap.min.js"></script>
+</body>
+</html>

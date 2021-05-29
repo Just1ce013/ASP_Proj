@@ -1,0 +1,105 @@
+2021-05-28T23:29:54.7600995+05:00  [INF] User profile is available. Using '"C:\Users\oblos\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2021-05-28T23:29:58.1389108+05:00  [INF] Entity Framework Core "5.0.6" initialized '"AppDBContent"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-28T23:29:58.9642761+05:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Category] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-05-28T23:29:59.0307114+05:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Car] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2021-05-28T23:29:59.0914673+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-28T23:29:59.0933027+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-28T23:29:59.1028100+05:00  [INF] Content root path: "E:\CSU_ASP\CSU_ASP\CSU_ASP" (b5d60022)
+2021-05-28T23:29:59.1562858+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44356/ - - (ca22a1cb)
+2021-05-28T23:29:59.3355696+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "CSU_ASP.Controllers.AccountController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:29:59.5048807+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.AccountController.Login (CSU_ASP)" - Validation state: Valid (dad538d7)
+2021-05-28T23:29:59.5189846+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.AccountController.Login (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7073ms. (50a9e262)
+2021-05-28T23:29:59.5366155+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2021-05-28T23:29:59.8167444+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Login" executed in 263.9835ms. (f66409e9)
+2021-05-28T23:29:59.8380565+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.AccountController.Login (CSU_ASP)" in 481.4811ms (afa2e885)
+2021-05-28T23:29:59.8443249+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Request "GET" "/" => 200 (b9f40507)
+2021-05-28T23:29:59.8639034+05:00 80000002-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44356/ - - - 200 - text/html;+charset=utf-8 710.1398ms (791a596a)
+2021-05-28T23:30:01.1738192+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44356/Account/Register - - (ca22a1cb)
+2021-05-28T23:30:01.1784845+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register()" on controller "CSU_ASP.Controllers.AccountController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:30:01.2128788+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" - Validation state: Valid (dad538d7)
+2021-05-28T23:30:01.2159295+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3833ms. (50a9e262)
+2021-05-28T23:30:01.2199905+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2021-05-28T23:30:01.2622546+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Register" executed in 43.4849ms. (f66409e9)
+2021-05-28T23:30:01.2645782+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" in 83.3191ms (afa2e885)
+2021-05-28T23:30:01.2680623+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Request "GET" "/Account/Register" => 200 (b9f40507)
+2021-05-28T23:30:01.2726868+05:00 80000005-0003-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44356/Account/Register - - - 200 - text/html;+charset=utf-8 97.7224ms (791a596a)
+2021-05-28T23:30:03.4882889+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 274 (ca22a1cb)
+2021-05-28T23:30:03.5152586+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CSU_ASP.Data.Models.Register)" on controller "CSU_ASP.Controllers.AccountController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:30:03.5981502+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" - Validation state: Invalid (dad538d7)
+2021-05-28T23:30:03.6041216+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.3159ms. (50a9e262)
+2021-05-28T23:30:03.6072406+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2021-05-28T23:30:03.6136429+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Register" executed in 6.7449ms. (f66409e9)
+2021-05-28T23:30:03.6190496+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" in 98.509ms (afa2e885)
+2021-05-28T23:30:03.6226622+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Request "POST" "/Account/Register" => 200 (b9f40507)
+2021-05-28T23:30:03.6277051+05:00 80000004-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 274 - 200 - text/html;+charset=utf-8 138.1343ms (791a596a)
+2021-05-28T23:30:05.9739352+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 274 (ca22a1cb)
+2021-05-28T23:30:05.9767982+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CSU_ASP.Data.Models.Register)" on controller "CSU_ASP.Controllers.AccountController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:30:06.0042379+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" - Validation state: Invalid (dad538d7)
+2021-05-28T23:30:06.0066928+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2038ms. (50a9e262)
+2021-05-28T23:30:06.0087178+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2021-05-28T23:30:06.0130936+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Executed ViewResult - view "Register" executed in 4.3398ms. (f66409e9)
+2021-05-28T23:30:06.0178334+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" in 36.4073ms (afa2e885)
+2021-05-28T23:30:06.0204293+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Request "POST" "/Account/Register" => 200 (b9f40507)
+2021-05-28T23:30:06.0281234+05:00 80000002-0002-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 274 - 200 - text/html;+charset=utf-8 50.8766ms (791a596a)
+2021-05-28T23:30:09.5052998+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 280 (ca22a1cb)
+2021-05-28T23:30:09.5077693+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CSU_ASP.Data.Models.Register)" on controller "CSU_ASP.Controllers.AccountController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:30:09.5306647+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" - Validation state: Valid (dad538d7)
+2021-05-28T23:30:09.5600653+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.6" initialized '"AppDBContent"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-28T23:30:09.6691670+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=["@__model_Email_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0" (0723d8ff)
+2021-05-28T23:30:09.7305234+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 196.3688ms. (50a9e262)
+2021-05-28T23:30:09.7331057+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Register". (c83d0e25)
+2021-05-28T23:30:09.7430804+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Register" executed in 10.566ms. (f66409e9)
+2021-05-28T23:30:09.7457484+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" in 235.3803ms (afa2e885)
+2021-05-28T23:30:09.7497871+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Request "POST" "/Account/Register" => 200 (b9f40507)
+2021-05-28T23:30:09.7572032+05:00 80000007-0003-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 280 - 200 - text/html;+charset=utf-8 253.3789ms (791a596a)
+2021-05-28T23:30:19.9277972+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 268 (ca22a1cb)
+2021-05-28T23:30:19.9307823+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CSU_ASP.Data.Models.Register)" on controller "CSU_ASP.Controllers.AccountController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:30:19.9573200+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" - Validation state: Valid (dad538d7)
+2021-05-28T23:30:19.9661174+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.6" initialized '"AppDBContent"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-28T23:30:19.9718950+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__model_Email_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0" (0723d8ff)
+2021-05-28T23:30:20.0814989+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2021-05-28T23:30:20.1517671+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Cookies" signed in. (c66dd7e7)
+2021-05-28T23:30:20.1547244+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 194.4142ms. (50a9e262)
+2021-05-28T23:30:20.1576322+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Executing RedirectResult, redirecting to "/Home/Index". (d98d540e)
+2021-05-28T23:30:20.1600962+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.AccountController.Register (CSU_ASP)" in 227.1542ms (afa2e885)
+2021-05-28T23:30:20.1622416+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Request "POST" "/Account/Register" => 302 (b9f40507)
+2021-05-28T23:30:20.1698418+05:00 80000003-0000-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44356/Account/Register application/x-www-form-urlencoded 268 - 302 - - 238.8508ms (791a596a)
+2021-05-28T23:30:20.1727100+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44356/Home/Index - - (ca22a1cb)
+2021-05-28T23:30:20.1770259+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ViewResult Index()" on controller "CSU_ASP.Controllers.HomeController" ("CSU_ASP"). (122b2fdf)
+2021-05-28T23:30:20.2049811+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Executing action method "CSU_ASP.Controllers.HomeController.Index (CSU_ASP)" - Validation state: Valid (dad538d7)
+2021-05-28T23:30:20.2094324+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.6" initialized '"AppDBContent"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-28T23:30:20.2166304+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Executed action method "CSU_ASP.Controllers.HomeController.Index (CSU_ASP)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 9.16ms. (50a9e262)
+2021-05-28T23:30:20.2209640+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-28T23:30:20.3212297+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[id], [c].[available], [c].[categoryID], [c].[img], [c].[isFavourite], [c].[lonDesc], [c].[name], [c].[price], [c].[shortDesc], [c0].[id], [c0].[categoryName], [c0].[desc]
+FROM [Car] AS [c]
+INNER JOIN [Category] AS [c0] ON [c].[categoryID] = [c0].[id]
+WHERE [c].[isFavourite] = CAST(1 AS bit)" (0723d8ff)
+2021-05-28T23:30:20.4387429+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 214.1639ms. (f66409e9)
+2021-05-28T23:30:20.4460875+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Executed action "CSU_ASP.Controllers.HomeController.Index (CSU_ASP)" in 261.8602ms (afa2e885)
+2021-05-28T23:30:20.4522730+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Request "GET" "/Home/Index" => 200 (b9f40507)
+2021-05-28T23:30:20.4571937+05:00 80000009-0003-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44356/Home/Index - - - 200 - text/html;+charset=utf-8 282.5337ms (791a596a)
